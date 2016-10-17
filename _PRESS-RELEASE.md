@@ -16,30 +16,28 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## WikiLeeks ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-  
+## WikiLeeks recepie nutrition finder ##
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Find out what your recepies are hiding ##
+  > Cooks and fitness enthusiast can now find the nutritional information for their favorite personal recepies!
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Cooks and fitness enthusiasts rejoice! Get the low down on what your favorite recepies are hiding in one easy step. Just enter the ingredients and quantities and recieive a full nutritional panel.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > It is difficult to calculate the nutritional information on unique home-recepies.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Now simply input the recepie and you will get an easy to read nutritional panel!
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+## Quote from the Founder ##
+  > "I used to only be able to smell what The Rock was cooking. Now I know exactly how much protein and vitamin E there is per serving!" - Luis Villeda, founder and CEO, CTO, CFO, CMO, CLO-GREEN
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Simply go to our website and input a recepie. Enjoy your easy to read nutritional information and dig in!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "WikiLeeks has changed my life. I used to never eat my grandma's cooking because it tasted bad. Now I don't eat it because I got the low down on how much sodium and trans-fat it has." - Just Another Satisfied Customer
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Stop wondering what your recepies are hiding. Expose their secrets using WikiLeeks!
