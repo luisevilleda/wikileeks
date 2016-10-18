@@ -4,7 +4,7 @@ app.factory('makePostRequest', function($http) {
 
   var factory = {};
 
-  factory.makePostRequest = function(recipe) {
+  factory.makePostRequest = function(recipe, cb) {
     console.log('POSTING');
     $http({
       method: 'POST',
@@ -15,6 +15,7 @@ app.factory('makePostRequest', function($http) {
        data: JSON.stringify(recipe)
     }).then(function successCallback(response) {
         currentRecipe = response;
+        cb();
       }, function errorCallback(response) {
         console.log('Request failed');
       });
