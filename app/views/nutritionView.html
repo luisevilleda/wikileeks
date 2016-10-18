@@ -1,0 +1,34 @@
+<div ng-controller='nutritionController'>
+  {{nutrients.data}}
+
+  <div class='panel panel-success recipe-panel'>
+    <div class="panel-heading">
+      {{title || 'Recipe Title'}}
+    </div>
+    <div class="panel-body">
+      <ul class='list-group'>
+        <li class='list-group-item' ng-repeat='(name, value) in nutrients'>
+          <!-- <span>{{name}} {{value}}</span> -->
+
+<!--           <ul class='list-group'>
+            <li class='list-group-item' ng-repeat='result in value'>
+              <span>{{result}}</span>
+            </li>
+          </ul> -->
+
+          <div class='panel panel-success'>
+            <div class='panel-heading'>{{value.label}}</div>
+            <div class='panel-body'>
+              {{value.quantity}}{{value.unit}}
+            </div>
+          </div>
+
+
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
