@@ -1,0 +1,23 @@
+{
+  "name": "serverwikileeks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js",
+    "postinstall": "bower install"
+  },
+  "author": "Luis Villeda",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "node": "0.0.0",
+    "nodemon": "^1.11.0",
+    "npm": "^3.10.8",
+    "request": "^2.75.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
