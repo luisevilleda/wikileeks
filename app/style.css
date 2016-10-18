@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   background-image: url('assets/food.png');
 }
 
@@ -22,3 +22,37 @@ body {
 .submit-recipe {
   float: right;
 }
+
+a.navbar-brand {
+  padding-top: 3px;
+}
+
+.glyphicon-eye-open, .glyphicon-cutlery {
+  color: #FAC564;
+}
+
+.siteName h3 {
+  margin-top: 10%;
+  color: #FAC564;
+}
+
+.navbar {
+  background-color: #f9fff7;
+}
+
+span.navbar-brand {
+  padding-top: 3px;
+}
+
+.glyphicon-eye-open:hover,
+.glyphicon-cutlery:hover,
+.siteName h3:hover {
+  color: #5BC0DE;
+}
+
+div.siteName {
+  padding-left: 0px;
+}
+
+
+
