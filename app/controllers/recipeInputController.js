@@ -1,8 +1,8 @@
 var app = angular.module('wikiLeeks');
 
-app.controller('recipeInputController', function($scope, makePostRequest) {
+app.controller('recipeInputController', function($scope, $location, makePostRequest) {
   $scope.recipe = {
-    title: 'Title',
+    title: '',
     ingr: [],
     yield: null
   };
@@ -25,7 +25,13 @@ app.controller('recipeInputController', function($scope, makePostRequest) {
   };
 
   $scope.analyzeRecipe = function() {
-    makePostRequest.makePostRequest($scope.recipe);
+    // if ($scope.title) {
+      makePostRequest.makePostRequest($scope.recipe, function() {
+        $location.path('/nutrition');
+      });
+    // } else {
+    //   window.alert('Title is required.');
+    // }
   };
 
 });
