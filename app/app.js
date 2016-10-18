@@ -1,4 +1,4 @@
-var app = angular.module('wikiLeeks', ['ngRoute']);
+var app = angular.module('wikiLeeks', ['ngRoute', 'angular-toArrayFilter']);
 
 app.config(function($routeProvider) {
   $routeProvider
