@@ -1,39 +1,36 @@
 var app = angular.module('wikiLeeks');
 
-app.controller('recepieInputController', function($scope, $http) {
-  $scope.recepie = {};
+app.controller('recipeInputController', function($scope, $http) {
+  $scope.recipe = {};
 
-  $scope.recepie.ingredients = [];
+  $scope.recipe.ingr = [];
 
   $scope.addIngredient = function() {
-    $scope.recepie.ingredients.push($scope.ingredient);
+    $scope.recipe.ingr.push($scope.ingredient);
     $scope.ingredient = '';
-    $scope.recepie.title = $scope.title;
+    $scope.recipe.title = $scope.title;
   };
 
   $scope.removeItem = function(item) {
-    console.log(item);
-    var index = $scope.recepie.ingredients.indexOf(item);
-    $scope.recepie.ingredients.splice(index, 1);
+    var index = $scope.recipe.ingr.indexOf(item);
+    $scope.recipe.ingr.splice(index, 1);
   };
 
   $scope.checkForEnterKey = function(keyEvent) {
     if (keyEvent.which === 13) {
-      console.log(keyEvent);
       $scope.addIngredient();
     }
-    console.log($scope.recepie);
   };
 
-  $scope.analyzeRecepie = function() {
+  $scope.analyzeRecipe = function() {
     console.log('POSTING');
     $http({
       method: 'POST',
-      url: '/analyzeRecepie',
+      url: '/analyzeRecipe',
       headers: {
          'Content-Type': 'application/json'
        },
-       data: $scope.recepie
+       data: $scope.recipe
     }).then(function successCallback(response) {
         console.log('Successful Request');
       }, function errorCallback(response) {

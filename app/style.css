@@ -11,14 +11,14 @@ body {
   color: red;
 }
 
-#recepieTitle {
+#recipeTitle {
   margin-bottom: 20px;
 }
 
-.recepie-panel {
+.recipe-panel {
   margin-top: 25px;
 }
 
-.submit-recepie {
+.submit-recipe {
   float: right;
 }

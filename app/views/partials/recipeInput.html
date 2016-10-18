@@ -1,10 +1,10 @@
-<div ng-controller='recepieInputController'>
+<div ng-controller='recipeInputController'>
 
 <div class='row'>
 
     <div class='col-md-6'>
-      <label for='recepieTitle'>Recepie Title</label>
-      <input class='form-control' id='recepieTitle' placeholder='Title...' ng-model='title'>
+      <label for='recipeTitle'>Recipe Title</label>
+      <input class='form-control' id='recipeTitle' placeholder='Title...' ng-model='title'>
 
       <label for='ingredientInput'>Next ingredient</label>
       <div class='input-group' id='ingredientForm'>
@@ -19,18 +19,18 @@
     </div>
 
     <div class='col-md-6'>
-      <div class='panel panel-success recepie-panel'>
+      <div class='panel panel-success recipe-panel'>
         <div class="panel-heading">
-          {{title || 'Recepie Title'}}
+          {{title || 'Recipe Title'}}
         </div>
         <div class="panel-body">
           <ul class='list-group'>
-            <li class='list-group-item' ng-repeat='entry in recepie.ingredients'>
+            <li class='list-group-item' ng-repeat='entry in recipe.ingr'>
               <span>{{entry}}</span>
               <span class='glyphicon glyphicon-remove' ng-click='removeItem(entry)'></span>
             </li>
           </ul>
-          <button class='btn btn-info submit-recepie' ng-click='analyzeRecepie()'>Analyze Recepie!</button>
+          <button class='btn btn-info submit-recipe' ng-click='analyzeRecipe()'>Analyze Recipe!</button>
         </div>
       </div>
     </div>

@@ -16,28 +16,28 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Simple recepie nutrition finder ##
+## Simple recipe nutrition finder ##
 
-## Find out what your recepies are hiding ##
-  > Cooks and fitness enthusiast can now find the nutritional information for their favorite personal recepies!
+## Find out what your recipes are hiding ##
+  > Cooks and fitness enthusiast can now find the nutritional information for their favorite personal recipes!
 
 ## Summary ##
-  > Cooks and fitness enthusiasts rejoice! Get the low down on what your favorite recepies are hiding in one easy step. Just enter the ingredients and quantities and recieive a full nutritional panel.
+  > Cooks and fitness enthusiasts rejoice! Get the low down on what your favorite recipes are hiding in one easy step. Just enter the ingredients and quantities and recieive a full nutritional panel.
 
 ## Problem ##
-  > It is difficult to calculate the nutritional information on unique home-recepies.
+  > It is difficult to calculate the nutritional information on unique home-recipes.
 
 ## Solution ##
-  > Now simply input the recepie and you will get an easy to read nutritional panel!
+  > Now simply input the recipe and you will get an easy to read nutritional panel!
 
 ## Quote from the Founder ##
   > "I used to only be able to smell what The Rock was cooking. Now I know exactly how much protein and vitamin E there is per serving!" - Luis Villeda, founder and CEO, CTO, CFO, CMO, CLO-GREEN
 
 ## How to Get Started ##
-  > Simply go to our website and input a recepie. Enjoy your easy to read nutritional information and dig in!
+  > Simply go to our website and input a recipe. Enjoy your easy to read nutritional information and dig in!
 
 ## Customer Quote ##
   > "WikiLeeks has changed my life. I used to never eat my grandma's cooking because it tasted bad. Now I don't eat it because I got the low down on how much sodium and trans-fat it has." - Just Another Satisfied Customer
 
 ## Closing and Call to Action ##
-  > Stop wondering what your recepies are hiding. Expose their secrets using WikiLeeks!
+  > Stop wondering what your recipes are hiding. Expose their secrets using WikiLeeks!
