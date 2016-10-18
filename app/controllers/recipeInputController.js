@@ -24,24 +24,8 @@ app.controller('recipeInputController', function($scope, makePostRequest) {
     }
   };
 
-  $scope.analyzeRecipe = function(recipe) {
-    makePostRequest.makePostRequest(recipe);
+  $scope.analyzeRecipe = function() {
+    makePostRequest.makePostRequest($scope.recipe);
   };
-
-  // function() {
-  //   console.log('POSTING');
-  //   $http({
-  //     method: 'POST',
-  //     url: '/analyzeRecipe',
-  //     headers: {
-  //        'Content-Type': 'application/json'
-  //      },
-  //      data: JSON.stringify($scope.recipe)
-  //   }).then(function successCallback(response) {
-  //       console.log(response);
-  //     }, function errorCallback(response) {
-  //       console.log('Request failed');
-  //     });
-  // };
 
 });

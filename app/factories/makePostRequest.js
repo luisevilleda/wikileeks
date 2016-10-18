@@ -15,7 +15,6 @@ app.factory('makePostRequest', function($http) {
        data: JSON.stringify(recipe)
     }).then(function successCallback(response) {
         currentRecipe = response;
-        console.log(response);
       }, function errorCallback(response) {
         console.log('Request failed');
       });
