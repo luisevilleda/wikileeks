@@ -1,0 +1,24 @@
+body {
+  padding-top: 50px;
+  background-image: url('assets/food.png');
+}
+
+.glyphicon-remove {
+  float: right;
+}
+
+.glyphicon-remove:hover {
+  color: red;
+}
+
+#recepieTitle {
+  margin-bottom: 20px;
+}
+
+.recepie-panel {
+  margin-top: 25px;
+}
+
+.submit-recepie {
+  float: right;
+}
