@@ -6,6 +6,8 @@
 
   <body ng-app='wikiLeeks'>
     <div class='container'>
+      <div ng-include="'views/partials/nav.html'"></div>
+
       <div class='row'>
         <div class='col-sm-1' id='leftColumn'></div>
 
@@ -32,6 +34,9 @@
   <script src='controllers/homepageController.js'></script>
   <script src='controllers/recipeInputController.js'></script>
   <script src='controllers/nutritionViewController.js'></script>
+  <script src='controllers/navController.js'></script>
+  <script src="lib/angular-toArrayFilter/toArrayFilter.js"></script>
+
 
 
 </html>
