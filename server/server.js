@@ -22,10 +22,10 @@ app.get('/', function(req, res) {
 });
 
 app.post('/analyzeRecipe', function(req, res) {
-  // requestHandler.analyzeRecipe(req.body, function(body) {
-  //   res.send(body);
-  // });  
-  res.sendFile(path.resolve(__dirname + '/../body.example.json'));
+  requestHandler.analyzeRecipe(req.body, function(body) {
+    res.send(body);
+  });  
+  // res.sendFile(path.resolve(__dirname + '/../body.example.json'));
 });
 
 //Wildcard, not sure if working

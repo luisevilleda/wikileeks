@@ -1,7 +1,11 @@
 var request = require('request');
 var fs = require('fs');
 var optional = require('optional');
-var keys = optional('./config.js');
+try {
+  var keys = require('./config.js');
+} catch(err) {
+  keys = {};
+}
 
 module.exports = {
 
