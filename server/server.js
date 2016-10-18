@@ -18,6 +18,11 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/../app/index.html');
 });
 
+app.post('/analyzeRecepie', function(req, res) {
+  console.log(req);
+  res.send(200);
+});
+
 
 
 //Wildcard, not sure if working
