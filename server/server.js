@@ -2,6 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 
+var requestHandler = require('./utils/requestHandler');
+
 var app = express();
 
 //Middleware
@@ -18,8 +20,9 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/../app/index.html');
 });
 
-app.post('/analyzeRecepie', function(req, res) {
-  console.log(req);
+app.post('/analyzeRecipe', function(req, res) {
+  requestHandler.analyzeRecipe(req.body);  
+
   res.send(200);
 });
 
