@@ -4,19 +4,31 @@
     <title>WikiLeeks</title>
   </head>
 
-  <body ng-app="wikiLeeks">
-    <div data-ng-view></div>
+  <body ng-app='wikiLeeks'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-1' id='leftColumn'></div>
 
+        <div class='col-sm-10' id='middleColumn'>
+          <div class='' data-ng-view></div>
+        </div>
+
+        <div class='col-sm-1' id='rightColumn'></div>
+      </div>
+    </div>
   </body>
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/angular-route/angular-route.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
-  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src='lib/angular/angular.min.js'></script>
+  <script src='lib/jquery/dist/jquery.min.js'></script>
+  <script src='lib/angular-route/angular-route.min.js'></script>
+
+  <link rel='stylesheet' type='text/css' href='lib/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  <script src='lib/bootstrap/dist/js/bootstrap.min.js'></script>
 
 
-  <script src="app.js"></script>
-  <script src="controllers/homepageController.js"></script>
+  <script src='app.js'></script>
+  <script src='controllers/homepageController.js'></script>
+  <script src='controllers/recepieInputController.js'></script>
 
 </html>
