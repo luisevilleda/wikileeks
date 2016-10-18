@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
+var path = require('path');
 
 var requestHandler = require('./utils/requestHandler');
 
@@ -21,12 +22,11 @@ app.get('/', function(req, res) {
 });
 
 app.post('/analyzeRecipe', function(req, res) {
-  requestHandler.analyzeRecipe(req.body);  
-
-  res.send(200);
+  // requestHandler.analyzeRecipe(req.body, function(body) {
+  //   res.send(body);
+  // });  
+  res.sendFile(path.resolve(__dirname + '/../body.example.json'));
 });
-
-
 
 //Wildcard, not sure if working
 app.get('*', function(req, res) {
