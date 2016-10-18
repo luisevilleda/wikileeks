@@ -1,0 +1,38 @@
+<div ng-controller='recepieInputController'>
+
+<div class='row'>
+
+    <div class='col-md-6'>
+      <label for='recepieTitle'>Recepie Title</label>
+      <input class='form-control' id='recepieTitle' placeholder='Title...' ng-model='title'>
+
+      <label for='ingredientInput'>Next ingredient</label>
+      <div class='input-group' id='ingredientForm'>
+        <input class='form-control' id='ingredientInput' placeholder='Ex: 2 onions, minced...'
+          ng-model='ingredient' ng-keypress='checkForEnterKey($event)'>
+        <span class='input-group-btn'>
+          <button class='btn btn-secondary btn-info' type='button' ng-click='addIngredient()'>
+            Add!
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class='col-md-6'>
+      <div class='panel panel-success recepie-panel'>
+        <div class="panel-heading">
+          {{title || 'Recepie Title'}}
+        </div>
+        <div class="panel-body">
+          <ul class='list-group'>
+            <li class='list-group-item' ng-repeat='entry in recepie.ingredients'>
+              <span>{{entry}}</span>
+              <span class='glyphicon glyphicon-remove' ng-click='removeItem(entry)'></span>
+            </li>
+          </ul>
+          <button class='btn btn-info submit-recepie' ng-click='analyzeRecepie()'>Analyze Recepie!</button>
+        </div>
+      </div>
+    </div>
+
+</div>
