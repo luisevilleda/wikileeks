@@ -3,31 +3,22 @@
 
   <div class='panel panel-success recipe-panel'>
     <div class="panel-heading">
-      {{title || 'Recipe Title'}}
+      {{title || 'Nutritional Facts'}}
+        <input class='pull-right' id='liveSearch' type='text' placeholder='Live-search' ng-model='searchNutrition'>
     </div>
     <div class="panel-body">
-      <ul class='list-group'>
-        <li class='list-group-item' ng-repeat='(name, value) in nutrients'>
-          <!-- <span>{{name}} {{value}}</span> -->
 
-<!--           <ul class='list-group'>
-            <li class='list-group-item' ng-repeat='result in value'>
-              <span>{{result}}</span>
-            </li>
-          </ul> -->
+      <table class='table table-striped'>
+        <th>Label</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <tr ng-repeat='(name, value) in nutrients | toArray | filter:searchNutrition'>
+          <td>{{value.label}}</td>
+          <td>{{value.quantity | number : 2}}</td>
+          <td>{{value.unit}}</td>
+        </tr>
+      </table>
 
-          <div class='panel panel-success'>
-            <div class='panel-heading'>{{value.label}}</div>
-            <div class='panel-body'>
-              {{value.quantity}}{{value.unit}}
-            </div>
-          </div>
-
-
-
-
-        </li>
-      </ul>
     </div>
   </div>
 
