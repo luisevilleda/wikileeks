@@ -1,13 +1,14 @@
 var request = require('request');
 var fs = require('fs');
-var keys = require('./config.js');
+var optional = require('optional');
+var keys = optional('./config.js');
 
 module.exports = {
 
   analyzeRecipe: function(recipe, cb) {
     request({
       method: 'POST',
-      url: `https://api.edamam.com/api/nutrition-details?app_id=${keys.app_id}&app_key=${keys.app_key}`,
+      url: `https://api.edamam.com/api/nutrition-details?app_id=${keys.app_id || ENV['S3_ID']}&app_key=${keys.app_key || ENV['S3_KEY']}`,
       headers: {
         'content-type': 'application/json',
       },
