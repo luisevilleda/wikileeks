@@ -1,9 +1,11 @@
 var app = angular.module('wikiLeeks');
 
-app.controller('recipeInputController', function($scope, $http) {
-  $scope.recipe = {};
-
-  $scope.recipe.ingr = [];
+app.controller('recipeInputController', function($scope, makePostRequest) {
+  $scope.recipe = {
+    title: 'Title',
+    ingr: [],
+    yield: null
+  };
 
   $scope.addIngredient = function() {
     $scope.recipe.ingr.push($scope.ingredient);
@@ -22,21 +24,24 @@ app.controller('recipeInputController', function($scope, $http) {
     }
   };
 
-  $scope.analyzeRecipe = function() {
-    console.log('POSTING');
-    $http({
-      method: 'POST',
-      url: '/analyzeRecipe',
-      headers: {
-         'Content-Type': 'application/json'
-       },
-       data: $scope.recipe
-    }).then(function successCallback(response) {
-        console.log('Successful Request');
-      }, function errorCallback(response) {
-        console.log('Request failed');
-      });
+  $scope.analyzeRecipe = function(recipe) {
+    makePostRequest.makePostRequest(recipe);
   };
 
+  // function() {
+  //   console.log('POSTING');
+  //   $http({
+  //     method: 'POST',
+  //     url: '/analyzeRecipe',
+  //     headers: {
+  //        'Content-Type': 'application/json'
+  //      },
+  //      data: JSON.stringify($scope.recipe)
+  //   }).then(function successCallback(response) {
+  //       console.log(response);
+  //     }, function errorCallback(response) {
+  //       console.log('Request failed');
+  //     });
+  // };
 
 });
