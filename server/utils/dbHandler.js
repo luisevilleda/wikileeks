@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect(`${ process.env.MONGOLAB_URI || 'mongodb://localhost/27017'}`);
+mongoose.connect(`${ process.env.S3_ID ? 'mongodb://heroku_lhg4kvxn:vdb5317k13khpn64f1a0gdjv6e@ds139735.mlab.com:39735/heroku_lhg4kvxn' : 'mongodb://localhost/27017'}`);
 
 var Recipe = mongoose.model('Recipe', {
   title: {type: String, required: true},
