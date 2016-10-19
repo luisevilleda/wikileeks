@@ -10,6 +10,10 @@ app.config(function($routeProvider) {
     templateUrl: 'views/nutritionView.html',
     controller: 'nutritionController'
   })
+  .when('/recipes', {
+    templateUrl: 'views/recipesView.html',
+    controller: 'recipesController'
+  })
   .otherwise({
     templateUrl: 'views/homepage.html',
     controller: 'homepageController'

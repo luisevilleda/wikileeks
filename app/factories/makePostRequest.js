@@ -5,7 +5,6 @@ app.factory('makePostRequest', function($http) {
   var factory = {};
 
   factory.makePostRequest = function(recipe, cb) {
-    console.log('POSTING');
     $http({
       method: 'POST',
       url: '/analyzeRecipe',
